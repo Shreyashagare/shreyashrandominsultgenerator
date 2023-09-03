@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  vertical-align: baseline;
+}
+.button {
+  width: 450px;
+  height: 100px;
+  padding: 8px;
+  border-radius: 20px;
+}
+div {
+  position: relative;
+  z-index: 2;
+}
+#heading {
+  font-size: 20pt;
+}
+h2 {
+  position: relative;
+  right: -15px;
+  top: -16px;
+  font-weight: 700;
+}
+
+#text {
+  font-size: 14pt;
+}
+
+body {
+  background-color: #333;
+  color: #333;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.footer {
+  width: 450px;
+  text-align: center;
+  display: block;
+  margin: 15px auto 30px auto;
+  font-size: 0.8em;
+  color: #fff;
+}
+.footer a {
+  font-weight: 500;
+  text-decoration: none;
+  color: #fff;
+}
+
+#name {
+  color: white;
+  position: absolute;
+  top: 559px;
+  right: 504px;
+}
+#insult-box {
+  border-radius: 20px;
+  position: relative;
+  right: -204px;
+  width: 446px;
+  padding: 40px 50px;
+  padding-top: 53px;
+  display: table;
+  background-color: #fff;
+}
+#insult-box .insult-text {
+  text-align: center;
+  width: 450px;
+  height: auto;
+  clear: both;
+  font-weight: 500;
+  font-size: 1.4em;
+}
+#insult-box .insult-text i {
+  font-size: 1em;
+  margin-right: 0.4em;
+}
+#insult-box .insult-author {
+  width: 450px;
+  height: auto;
+  clear: both;
+  padding-top: 20px;
+  font-size: 1em;
+  text-align: right;
+}
+#insult-box .buttons {
+  width: 450px;
+  margin: auto;
+  display: block;
+  border-radius: 20px;
+}
+#insult-box .buttons .button {
+  height: 38px;
+  border: none;
+  border-radius: 3px;
+  color: #fff;
+  background-color: #333;
+  outline: none;
+  font-size: 0.85em;
+  padding: 8px 18px 6px 18px;
+  margin-top: 30px;
+  opacity: 1;
+  cursor: pointer;
+  border-radius: 10px;
+}
+#insult-box .buttons .button:hover {
+  opacity: 0.9;
+}
+#insult-box .buttons .button#tweet-insult,
+#insult-box .buttons .button#tumblr-insult {
+  float: left;
+  padding: 0px;
+  padding-top: 8px;
+  text-align: center;
+  font-size: 1.2em;
+  margin-right: 5px;
+  height: 30px;
+  width: 40px;
+}
+#insult-box .buttons .button#new-insult {
+  float: right;
+}
+
+p {
+  position: relative;
+  color: white;
+  top: 153px;
+  right: 273px;
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-size: 12pt;
+  z-index: 10;
+}
+
+/* Add loading state styles */
+.button.loading {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Add clicked state styles */
+.button.clicked {
+  background-color: #777; /* Change the background color when clicked */
+  color: #fff; /* Change the text color when clicked */
+  cursor: not-allowed;
+  pointer-events: none; /* Disable button click when in clicked state */
+}
